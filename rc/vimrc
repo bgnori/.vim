@@ -1,0 +1,28 @@
+set expandtab
+set softtabstop=2
+set shiftwidth=2
+set showmatch
+set smarttab
+set smartindent
+set tabstop=2
+set backup
+set autoindent
+set smartcase
+syntax enable
+colorscheme evening
+
+set splitbelow
+set splitright
+set title
+
+set modeline
+set laststatus=3
+set statusline=%F%r%h%=
+set cmdheight=3
+
+filetype plugin indent on
+set encoding=utf-8
+set termencoding=utf-8
+
+call pathogen
+
