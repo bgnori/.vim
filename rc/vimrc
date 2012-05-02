@@ -13,7 +13,8 @@ NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'vim-scripts/slimv.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tpope/vim-surround'
 
 
 filetype plugin indent on
