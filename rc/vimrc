@@ -17,7 +17,8 @@ NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'derekwyatt/vim-scala'
-
+NeoBundle 'ingydotnet/yaml-vim'
+NeoBundle 'mattn/calendar-vim'
 
 filetype plugin indent on
 
