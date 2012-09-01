@@ -50,6 +50,8 @@ set nohidden
 
 set modeline
 set laststatus=1
+"it shows statusline some thing like:"
+"[utf-8 unix vim tab=4]~/.vim/rc/vimrc    [+]   line=54/60,92%"
 set statusline=[%{&fileencoding}\ %{&fileformat}\ %{&filetype}\ tab=%{&tabstop}]%F%9(\ %m%r\ %)%=line=%l/%L,%P
 set cmdheight=1
 
