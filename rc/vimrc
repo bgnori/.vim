@@ -16,6 +16,7 @@ endif
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'eagletmt/ghcmod-vim'
@@ -64,6 +65,11 @@ set termencoding=utf-8
 "support vim: in file to open. i.e.
 "vim: set expandtab fenc=cp932 ff=unix ft=txt : # この行はvimエディタのモードラインです。
 set modeline
+
+
+
+" NeoBundle 'Shougo/neocomplcache'
+let g:neocomplcache_enable_at_startup = 1
 
 
 
