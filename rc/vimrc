@@ -1,5 +1,5 @@
 
-call pathogen#runtime_append_all_bundles()
+" call pathogen#runtime_append_all_bundles()
 
 
 filetype off
@@ -19,8 +19,16 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'ingydotnet/yaml-vim'
 NeoBundle 'mattn/calendar-vim'
+" NeoBundle 'kana/vim-metarw'
+" NeoBundle 'ujihisa/neco-ghc/'
 
 filetype plugin indent on
+filetype on
+set nocompatible
+
+
+" クリップボードから貼り付け
+" inoremap <C-r>* <C-o>:set paste<CR><C-r>*<C-o>:set nopaste<CR>
 
 set expandtab
 set softtabstop=4
@@ -38,10 +46,11 @@ colorscheme evening
 set splitbelow
 set splitright
 set title
+set nohidden
 
 set modeline
 set laststatus=1
-set statusline=%F%r%h%=
+set statusline=[%{&fileencoding}\ %{&fileformat}\ %{&filetype}\ tab=%{&tabstop}]%F%9(\ %m%r\ %)%=line=%l/%L,%P
 set cmdheight=1
 
 set encoding=utf-8
