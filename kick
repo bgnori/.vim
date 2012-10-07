@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+git submodule init
+git submodule update --rebase
+
+cd bundle/vimproc
+make -f make_unix.mak
