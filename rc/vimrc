@@ -26,6 +26,8 @@ NeoBundle 'ingydotnet/yaml-vim'
 NeoBundle 'mattn/calendar-vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-ft-clojure'
+NeoBundle 'fuenor/qfixhowm', '8915c5'
+
 " thinca/vim-quickrun'
 " NeoBundle 'kana/vim-metarw'
 " NeoBundle 'ujihisa/neco-ghc/'
@@ -60,7 +62,7 @@ set nohidden
 "it shows statusline some thing like:"
 "[utf-8 unix vim tab=4]~/.vim/rc/vimrc    [+]   line=54/60,92%"
 set statusline=[%{&fileencoding}\ %{&fileformat}\ %{&filetype}\ tab=%{&tabstop}]%F%9(\ %m%r\ %)%=line=%l/%L,%P
-set laststatus=1
+set laststatus=2
 set cmdheight=1
 
 set encoding=utf-8
@@ -70,9 +72,30 @@ set termencoding=utf-8
 set modeline
 
 
+" Howm
+"set runtimepath += ~/.howm
+let home_dir = '~/.howm'
+let home_filename = '%Y/%m/%Y-%m-%d-%H%M%S.txt'
+let home_fileencoding = 'utf-8'
+let home_fileformat = 'unix'
+let QFixHowm_FileType = 'markdown'
+let QFixHowm_RecentMode = 2
+
+
 
 " NeoBundle 'Shougo/neocomplcache'
 let g:neocomplcache_enable_at_startup = 1
 
-
+" To Do:
+" 1. set window width with splitted to avoid Display frame 
+"   Just for full size source editting, dev and so on.
+"   not for commit message etc
+"
+" 2. force [quickrun output] window to be v splitted for Desktop
+"   Since I'm using displays in long way
+"
+" 3. JP input method auto activation/deactivation
+"   wanna 'JP input mode'
+"
+"
 
