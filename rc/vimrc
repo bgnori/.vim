@@ -74,7 +74,7 @@ set modeline
 
 " Howm
 "set runtimepath += ~/.howm
-let home_dir = '~/.howm'
+let home_dir = '~/howm'
 let home_filename = '%Y/%m/%Y-%m-%d-%H%M%S.txt'
 let home_fileencoding = 'utf-8'
 let home_fileformat = 'unix'
