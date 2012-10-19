@@ -57,7 +57,7 @@ colorscheme evening
 set backupdir=/tmp/vim/backup
 let &directory = &backupdir
 if !isdirectory(&backupdir)
-    mkdir(&backupdir, "p")
+    call mkdir(&backupdir, "p")
 endif
 
 set splitbelow
