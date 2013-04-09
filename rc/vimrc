@@ -54,7 +54,7 @@ set wrap
 syntax enable
 colorscheme evening
 
-set backupdir=/tmp/vim/backup
+set backupdir=~/tmp/vim/backup
 let &directory = &backupdir
 
 set splitbelow
@@ -83,7 +83,7 @@ let home_fileencoding = 'utf-8'
 let home_fileformat = 'unix'
 let QFixHowm_FileType = 'markdown'
 let QFixHowm_RecentMode = 2
-
+let QFixHowm_ReminderDefault_Schedule = 1
 
 
 " NeoBundle 'Shougo/neocomplcache'
