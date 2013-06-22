@@ -14,16 +14,15 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'mattn/calendar-vim'
 NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'ingydotnet/yaml-vim'
-NeoBundle 'mattn/calendar-vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-ft-clojure'
 NeoBundle 'fuenor/qfixhowm', '8915c5'
@@ -61,6 +60,11 @@ colorscheme evening
 
 set backupdir=~/tmp/vim/backup
 let &directory = &backupdir
+if !isdirectory(&backupdir)
+    mkdir(&backupdir, "p")
+endif
+
+call system("chmod -R go-rxw " . &backupdir)
 
 set splitbelow
 set splitright

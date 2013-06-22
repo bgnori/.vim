@@ -6,4 +6,4 @@ git submodule update --rebase
 
 cd bundle/vimproc
 make -f make_unix.mak
-mkdir -p /tmp/vim/backup/
+mkdir -p ~/tmp/vim/backup/
