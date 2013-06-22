@@ -28,6 +28,8 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-ft-clojure'
 NeoBundle 'fuenor/qfixhowm', '8915c5'
 
+NeoBundle 'mattn/habatobi-vim'
+
 " thinca/vim-quickrun'
 " NeoBundle 'kana/vim-metarw'
 " NeoBundle 'ujihisa/neco-ghc/'
@@ -51,6 +53,9 @@ set backup
 set autoindent
 set smartcase
 set wrap
+set mouse=a
+set ttymouse=xterm2
+
 syntax enable
 colorscheme evening
 
@@ -61,6 +66,7 @@ set splitbelow
 set splitright
 set title
 set nohidden
+set cursorline
 
 "it shows statusline some thing like:"
 "[utf-8 unix vim tab=4]~/.vim/rc/vimrc    [+]   line=54/60,92%"
@@ -74,6 +80,7 @@ set termencoding=utf-8
 "vim: set expandtab fenc=cp932 ff=unix ft=txt : # この行はvimエディタのモードラインです。
 set modeline
 
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Howm
 "set runtimepath += ~/.howm
