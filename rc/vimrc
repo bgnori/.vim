@@ -17,6 +17,7 @@ NeoBundle 'Shougo/neobundle.vim'
 " NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
+"NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'mattn/calendar-vim'
@@ -62,7 +63,7 @@ colorscheme evening
 set backupdir=~/tmp/vim/backup
 let &directory = &backupdir
 if !isdirectory(&backupdir)
-    mkdir(&backupdir, "p")
+    call mkdir(&backupdir, "p")
 endif
 
 call system("chmod -R go-rxw " . &backupdir)
@@ -86,6 +87,7 @@ set termencoding=utf-8
 set modeline
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
 
 " Howm
 "set runtimepath += ~/.howm
