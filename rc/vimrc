@@ -14,7 +14,7 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/neocomplcache'
+" NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'tpope/vim-surround'
@@ -27,7 +27,7 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-ft-clojure'
 NeoBundle 'fuenor/qfixhowm', '8915c5'
 
-NeoBundle 'mattn/habatobi-vim'
+"NeoBundle 'mattn/habatobi-vim'
 
 " thinca/vim-quickrun'
 " NeoBundle 'kana/vim-metarw'
@@ -54,6 +54,7 @@ set smartcase
 set wrap
 set mouse=a
 set ttymouse=xterm2
+set ambiwidth=double
 
 syntax enable
 colorscheme evening
@@ -97,8 +98,8 @@ let QFixHowm_RecentMode = 2
 let QFixHowm_ReminderDefault_Schedule = 1
 
 
-" NeoBundle 'Shougo/neocomplcache'
-let g:neocomplcache_enable_at_startup = 1
+" " NeoBundle 'Shougo/neocomplcache'
+" let g:neocomplcache_enable_at_startup = 1
 
 " To Do:
 " 1. set window width with splitted to avoid Display frame 
